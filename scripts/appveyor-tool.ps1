@@ -1,5 +1,13 @@
 $CRAN = "http://cran.rstudio.com"
-$Rversion = $env:Rversion
+If(Test-Path $env:Rversion)
+{
+   $Rversion = $env:Rversion
+}
+Else
+{
+   $Rversion = "R"
+}
+
 
 # Found at http://zduck.com/2012/powershell-batch-files-exit-codes/
 Function Exec
