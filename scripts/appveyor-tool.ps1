@@ -2,7 +2,7 @@ $CRAN = "http://cran.rstudio.com"
 
 echo Rversion: $env:Rversion
 
-If(Test-Path $env:Rversion)
+If(Test-Path Env:\Rversion)
 {
    $Rversion = $env:Rversion
 }
