@@ -1,5 +1,5 @@
-$CRAN = ${CRAN:-"http://cran.rstudio.com"}
-$Rversion = ${Rversion:-"R"}
+$CRAN = "http://cran.rstudio.com"
+$Rversion = $env:Rversion
 
 # Found at http://zduck.com/2012/powershell-batch-files-exit-codes/
 Function Exec
